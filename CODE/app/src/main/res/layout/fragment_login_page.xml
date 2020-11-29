@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.LoginPage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:padding="5dp"
+                android:text="@string/welcome_title_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_green"
+                android:textSize="@dimen/font_extreme"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_centerlogo"
+                android:contentDescription="@string/reg_log_string" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/login_title_string"
+                android:textAlignment="center"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_extreme"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangular_red_border"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/login_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_red"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="@string/submit_string"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_big"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

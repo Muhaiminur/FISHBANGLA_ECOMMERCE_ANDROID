@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/seller_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/seller_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/submit_string"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_centerlogo"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/seller_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/single_seller_string"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_xxxl" />
+
+            <TextView
+                android:id="@+id/seller_ratting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seller_ratting_string"
+                android:textColor="@color/app_hint2"
+                android:textSize="@dimen/font_xl" />
+
+            <TextView
+                android:id="@+id/seller_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seller_review_name_string"
+                android:textColor="@color/app_hint2"
+                android:textSize="@dimen/font_xl" />
+
+            <RatingBar
+                android:id="@+id/seller_rattingbar"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:numStars="5"
+                android:rating="5.0"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/seller_mbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seller_mbl_string"
+                android:textColor="@color/app_hint2"
+                android:textSize="@dimen/font_xl" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_hint" />
+</LinearLayout>

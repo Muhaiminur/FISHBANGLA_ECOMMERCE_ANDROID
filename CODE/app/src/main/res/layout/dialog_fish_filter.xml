@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangular_black_border"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/product_filter_string"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_extreme"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/filter_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            app:ms_arrowColor="@color/colorPrimaryDark"
+            app:ms_baseColor="@color/app_hint"
+            app:ms_enableErrorLabel="true"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelColor="@color/app_hint"
+            app:ms_floatingLabelText="@string/filter_all_division_string"
+            app:ms_hint="@string/filter_all_division_string"
+            app:ms_hintColor="@color/app_hint"
+            app:ms_multiline="false" />
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/filter_division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            app:ms_arrowColor="@color/colorPrimaryDark"
+            app:ms_baseColor="@color/app_hint"
+            app:ms_enableErrorLabel="true"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelColor="@color/app_hint"
+            app:ms_floatingLabelText="@string/filter_all_product_string"
+            app:ms_hint="@string/filter_all_product_string"
+            app:ms_hintColor="@color/app_hint"
+            app:ms_multiline="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/colorDark75" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/filter_size_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyCheckBox" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/filter_product_avg_string"
+                android:textColor="@color/colorDark75"
+                android:textSize="@dimen/font_xxxl" />
+
+            <com.jaygoo.widget.RangeSeekBar
+                android:id="@+id/size_range"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:rsb_gravity="center"
+                app:rsb_indicator_background_color="@color/colorPrimaryDark"
+                app:rsb_indicator_show_mode="alwaysHide"
+                app:rsb_min_interval="10"
+                app:rsb_mode="range"
+                app:rsb_progress_color="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/size_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/colorDark75"
+            android:textSize="@dimen/font_xxxl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/price_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyCheckBox" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/filter_product_price_string"
+                android:textColor="@color/colorDark75"
+                android:textSize="@dimen/font_xxxl" />
+
+            <com.jaygoo.widget.RangeSeekBar
+                android:id="@+id/price_range"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:rsb_gravity="center"
+                app:rsb_indicator_background_color="@color/colorPrimaryDark"
+                app:rsb_indicator_show_mode="alwaysHide"
+                app:rsb_min_interval="10"
+                app:rsb_mode="range"
+                app:rsb_progress_color="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/colorDark75"
+            android:textSize="@dimen/font_xxxl" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/filtercancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangular_green"
+                android:gravity="center"
+                android:text="@string/no_string"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_huge"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/filteradd"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangular_red"
+                android:gravity="center"
+                android:text="@string/submit_string"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_huge"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

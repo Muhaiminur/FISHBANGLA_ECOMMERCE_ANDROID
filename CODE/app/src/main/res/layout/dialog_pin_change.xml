@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangular_black_border"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/pin_change_title_string"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_extreme"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/pin_change_msg_string"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/font_xl"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/pin_change_old_string"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/font_xl"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <com.poovam.pinedittextfield.CirclePinField
+            android:id="@+id/pin_change_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSelectHandle="@drawable/text_handle"
+            android:textSize="@dimen/font_extreme"
+            app:circleRadius="15dp"
+            app:fieldBgColor="@color/app_white"
+            app:fillerColor="@color/colorPrimaryDark"
+            app:highlightColor="@color/colorPrimaryDark"
+            app:highlightType="currentField"
+            app:noOfFields="5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/pin_change_new_string"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/font_xl"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <com.poovam.pinedittextfield.CirclePinField
+            android:id="@+id/pin_change_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSelectHandle="@drawable/text_handle"
+            android:textSize="@dimen/font_extreme"
+            app:circleRadius="15dp"
+            app:fieldBgColor="@color/app_white"
+            app:fillerColor="@color/colorPrimaryDark"
+            app:highlightColor="@color/colorPrimaryDark"
+            app:highlightType="currentField"
+            app:isCursorEnabled="true"
+            app:noOfFields="5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/pinchangecancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangular_green"
+                android:gravity="center"
+                android:text="@string/no_string"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_huge"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pinchangeadd"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangular_red"
+                android:gravity="center"
+                android:text="@string/submit_string"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_huge"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        tools:context=".Fragment.AddressList">
+
+        <LinearLayout
+            android:id="@+id/no_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/no_address_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address_no_string"
+                android:textAlignment="center"
+                android:textColor="@color/colorDark"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/no_add_new_address"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_red"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:text="@string/address_new_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/address_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

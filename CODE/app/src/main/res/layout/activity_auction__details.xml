@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        tools:context=".Activity.Auction_Details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.opensooq.pluto.PlutoView
+                    android:id="@+id/fish_auction_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:indicator_visibility="true" />
+
+                <com.opensooq.pluto.PlutoIndicator
+                    android:id="@+id/custom_indicator_auction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="15dp"
+                    app:selected_color="@color/app_red"
+                    app:selected_height="3dp"
+                    app:selected_padding_left="7dp"
+                    app:selected_padding_right="7dp"
+                    app:selected_width="16dp"
+                    app:shape="rect"
+                    app:unselected_color="@color/app_white"
+                    app:unselected_height="3dp"
+                    app:unselected_padding_left="7dp"
+                    app:unselected_padding_right="7dp"
+                    app:unselected_width="16dp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <TextView
+                android:id="@+id/auction_fish_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="5dp"
+                android:text="@string/name_string"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_big"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/auction_fish_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/price_string"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_extreme" />
+
+            <TextView
+                android:id="@+id/auction_fish_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/history_time_string"
+                android:textColor="@color/app_hint2"
+                android:textSize="@dimen/font_huge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/seller_profile_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_logo_png" />
+
+                <LinearLayout
+                    android:id="@+id/auction_seller_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/auction_seller_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seller_name_string" />
+
+                    <TextView
+                        android:id="@+id/auction_seller_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seller_mbl_string" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <TextView
+                android:id="@+id/auction_countdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="@string/history_time_string"
+                android:textColor="@color/colorDark75"
+                android:textSize="@dimen/font_extreme" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/auction_max_price_string"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/font_big" />
+
+                <TextView
+                    android:id="@+id/auction_fish_highest_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/zero_taka_string"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/font_big" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/auction_fish_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_red"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="@string/auction_submit_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

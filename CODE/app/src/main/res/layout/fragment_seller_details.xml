@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.SellerDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/seller_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_centerlogo"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/seller_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/seller_name_string"
+                android:textAlignment="center"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_huge" />
+
+            <TextView
+                android:id="@+id/seller_details_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/request_email_string"
+                android:textAlignment="center"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_xl" />
+
+            <TextView
+                android:id="@+id/seller_details_mbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seller_mbl_string"
+                android:textAlignment="center"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_xl" />
+
+            <Button
+                android:id="@+id/seller_details_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/seller_follow_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_xl"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RatingBar
+                android:id="@+id/seller_details_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:numStars="5"
+                android:rating="5.0"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/seller_details_more_string"
+                android:textSize="@dimen/font_huge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/seller_details_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

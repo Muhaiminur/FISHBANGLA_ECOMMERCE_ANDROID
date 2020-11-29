@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        tools:context=".Fragment.NotificationList">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_red"
+            android:padding="5dp"
+            android:text="@string/notification_string"
+            android:textAlignment="center"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/font_extreme"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notification_read"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rectangular_green"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/notification_read_string"
+            android:textAlignment="center"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/font_xl"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notification_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</layout>

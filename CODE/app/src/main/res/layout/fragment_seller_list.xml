@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".Fragment.SellerList">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_red"
+            android:padding="5dp"
+            android:text="@string/seller_string"
+            android:textAlignment="center"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/font_extreme"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/seller_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/seller_name_string"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColorHint="@color/app_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/seller_search_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="textStart"
+            app:ms_arrowColor="@color/colorPrimaryDark"
+            app:ms_baseColor="@color/colorPrimaryDark"
+            app:ms_enableErrorLabel="true"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelColor="@color/app_hint"
+            app:ms_floatingLabelText="@string/search_string"
+            app:ms_hint="@string/search_string"
+            app:ms_hintColor="@color/app_hint"
+            app:ms_multiline="false" />
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_drop_shadow" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/seller_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</layout>

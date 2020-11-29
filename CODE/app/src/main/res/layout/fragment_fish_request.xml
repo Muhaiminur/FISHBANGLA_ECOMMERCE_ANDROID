@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Fragment.FishRequest">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/request_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_extreme"
+                android:textStyle="bold"
+                android:background="@drawable/rectangular_red"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/request_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                app:ms_arrowColor="@color/colorPrimaryDark"
+                app:ms_baseColor="@color/app_hint"
+                app:ms_enableErrorLabel="true"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="@color/app_hint"
+                app:ms_floatingLabelText="@string/request_title_string"
+                app:ms_hint="@string/request_title_string"
+                app:ms_hintColor="@color/app_hint"
+                app:ms_multiline="false" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/request_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="top|start"
+                    android:hint="@string/request_msg_string"
+                    android:inputType="textLongMessage" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/request_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/round_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/submit_string"
+                android:textAlignment="center"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_extra" />
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

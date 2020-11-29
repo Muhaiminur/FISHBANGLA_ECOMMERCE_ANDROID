@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1061400437257",
+    "firebase_url": "https://fishbangla-83dee.firebaseio.com",
+    "project_id": "fishbangla-83dee",
+    "storage_bucket": "fishbangla-83dee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061400437257:android:7ef45af171ae44ed",
+        "android_client_info": {
+          "package_name": "com.gtech.fishbangla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061400437257-3cut8lsuc2u8q0t40c2cfkmen961sutn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmQqugfpOUYt61AYMaNFuOTnaFwn_h650"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061400437257-3cut8lsuc2u8q0t40c2cfkmen961sutn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

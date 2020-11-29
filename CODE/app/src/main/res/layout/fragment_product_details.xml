@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        tools:context=".Fragment.ProductDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.opensooq.pluto.PlutoView
+                    android:id="@+id/fish_details_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:indicator_visibility="true" />
+
+                <com.opensooq.pluto.PlutoIndicator
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="15dp"
+                    app:selected_color="@color/app_red"
+                    app:selected_height="3dp"
+                    app:selected_padding_left="7dp"
+                    app:selected_padding_right="7dp"
+                    app:selected_width="16dp"
+                    app:shape="rect"
+                    app:unselected_color="@color/app_white"
+                    app:unselected_height="3dp"
+                    app:unselected_padding_left="7dp"
+                    app:unselected_padding_right="7dp"
+                    app:unselected_width="16dp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <TextView
+                android:id="@+id/fish_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_extra"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fish_details_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_big" />
+
+            <TextView
+                android:id="@+id/fish_details_avg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/app_hint"
+                android:textSize="@dimen/font_xxl" />
+
+            <TextView
+                android:id="@+id/fish_details_minimum_sell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/app_hint"
+                android:textSize="@dimen/font_xxl" />
+
+            <TextView
+                android:id="@+id/fish_details_fvrt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rectangular_black_border_white"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/fvrt_add_string"
+                android:textColor="@color/app_green"
+                android:textSize="@dimen/font_xxl" />
+
+
+            <TextView
+                android:id="@+id/fish_details_seller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/app_green"
+                android:textSize="@dimen/font_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="2"
+                    android:background="@color/app_hint" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/product_details_minus"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/ic_minus"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+
+                        <TextView
+                            android:id="@+id/product_details_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/one"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/font_extreme" />
+
+                        <TextView
+                            android:id="@+id/product_details_unit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unit_kg_string"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/font_xxxl" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/product_details_plus"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/ic_plus"
+                        android:contentDescription="@string/app_name" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="2"
+                    android:background="@color/app_hint" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/product_details_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/taka_string"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_extreme"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_details_add"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/add_product_string"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_huge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more_product_string"
+                android:textAlignment="textStart"
+                android:textColor="@color/app_hint"
+                android:textSize="@dimen/font_huge" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_details_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.AddAddress">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="90dp"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_address_background"
+                android:contentDescription="@string/address_home1_string" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addadress_primary"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_home_red"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="@string/address_home1_string"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_red"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/addadress_normal"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_location_black"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="@string/address_address1_string"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_hint2"
+                    android:textStyle="bold"/>
+
+                <!--<Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_location_black"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="@string/address_address2_string"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_hint2" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_drop_shadow"
+                android:layout_marginBottom="5dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addadress_homenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_home_string"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColorHint="@color/app_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addadress_flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_flor_string"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColorHint="@color/app_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addadress_road"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_road_string"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColorHint="@color/app_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addadress_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_area_string"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColorHint="@color/app_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/address_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                app:ms_arrowColor="@color/colorPrimaryDark"
+                app:ms_baseColor="@color/app_hint"
+                app:ms_enableErrorLabel="true"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="@color/app_hint"
+                app:ms_floatingLabelText="@string/division_string"
+                app:ms_hint="@string/division_string"
+                app:ms_hintColor="@color/app_hint"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/address_zilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                app:ms_arrowColor="@color/colorPrimaryDark"
+                app:ms_baseColor="@color/app_hint"
+                app:ms_enableErrorLabel="true"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="@color/app_hint"
+                app:ms_floatingLabelText="@string/zilla_string"
+                app:ms_hint="@string/zilla_string"
+                app:ms_hintColor="@color/app_hint"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/address_upozilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                app:ms_arrowColor="@color/colorPrimaryDark"
+                app:ms_baseColor="@color/app_hint"
+                app:ms_enableErrorLabel="true"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="@color/app_hint"
+                app:ms_floatingLabelText="@string/upozilla_string"
+                app:ms_hint="@string/upozilla_string"
+                app:ms_hintColor="@color/app_hint"
+                app:ms_multiline="false" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addadress_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/request_name_string"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColorHint="@color/app_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addadress_mbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/seller_mbl_string"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:digits="0123456789"
+                    android:textColorHint="@color/app_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit_new_address"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_red"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="@string/address_submit_string"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

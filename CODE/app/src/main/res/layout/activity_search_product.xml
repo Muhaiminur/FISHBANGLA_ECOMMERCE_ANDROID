@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".Activity.SearchProduct">
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/search_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            app:ms_arrowColor="@color/colorPrimaryDark"
+            app:ms_baseColor="@color/colorPrimaryDark"
+            app:ms_enableErrorLabel="true"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelColor="@color/app_hint"
+            app:ms_floatingLabelText="@string/search_string"
+            app:ms_hint="@string/search_string"
+            app:ms_hintColor="@color/app_hint"
+            app:ms_multiline="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_drop_shadow" />
+
+        <LinearLayout
+            android:id="@+id/search_add_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/search_new_string"
+                android:textAlignment="center"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/font_big" />
+
+            <Button
+                android:id="@+id/fish_add_new"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_plus"
+                android:clickable="false"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_drop_shadow" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+</layout>

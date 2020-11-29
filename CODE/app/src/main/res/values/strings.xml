@@ -1,0 +1,318 @@
+<resources>
+    <string name="app_name">ফিশ বাংলা</string>
+
+    <string name="one">১</string>
+    <string name="two">২</string>
+    <string name="three">৩</string>
+    <string name="four">৪</string>
+    <string name="five">৫</string>
+    <string name="six">৬</string>
+    <string name="seven">৭</string>
+    <string name="eight">৮</string>
+    <string name="nine">৯</string>
+    <string name="zero">০</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="exit_string">আপনি কি ফিশবাংলা থেকে বের হতে চান?</string>
+
+    <string name="yes_string">হ্যাঁ</string>
+    <string name="no_string">না</string>
+    <string name="ok_string">ঠিক আছে</string>
+    <string name="no_internet_string">আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন</string>
+    <string name="something_went_string">something went wrong</string>
+    <string name="try_again_string">পরে আবার চেষ্টা করুন</string>
+    <string name="validation_string">সব তথ্য পূরণ করুন</string>
+    <string name="submit_string">জমা দিন</string>
+    <string name="wait_string">অনুগ্রহ পূর্বক অপেক্ষা করুন</string>
+    <string name="no_data_string">কোন তথ্য নেই </string>
+    <string name="seller_no_data_string">কোনো বিক্রেতা খুঁজে পাওয়া যায়নি</string>
+    <string name="product_no_data_string">কোনো পণ্য খুঁজে পাওয়া যায়নি</string>
+    <string name="product_fvrt_no_data_string">কোনো ইচ্ছেতালিকার পণ্য খুঁজে পাওয়া যায়নি</string>
+    <string name="buy_no_data_string">ক্রয় সংক্রান্ত আপনার কোন বিবরণ পাওয়া যায়নি।</string>
+    <string name="sell_no_data_string">বিক্রয় সংক্রান্ত আপনার কোন বিবরণ পাওয়া যায়নি।</string>
+    <string name="notification_no_data_string">বর্তমানে কোন নোটিফিকেশন নেই।</string>
+    <string name="product4_no_data_string">কোনো বিক্রেতা খুঁজে পাওয়া যায়নি</string>
+    <string name="own_product_buying_string">আপনি আপনার পণ্য কিনতে পারবেন না</string>
+    <string name="fishbangla_contact_string">ফিশবাংলার সাথে যোগাযোগ করুন</string>
+
+    <string name="unit_gram_string">গ্রাম</string>
+    <string name="unit_kg_string">কেজি</string>
+    <string name="unit_piece_string">পিস</string>
+    <string name="unit_unit_string">ইউনিট</string>
+    <string name="taka_string"> টাকা</string>
+    <string name="taka_sign_string">৳</string>
+    <string name="zero_taka_string">: 0.0 টাকা</string>
+    <string name="wholesale_string">পাইকারী</string>
+    <string name="retail_string">খুচরা</string>
+
+    <!--Menu-->
+    <string name="seller_string">বিক্রেতার তালিকা</string>
+    <string name="all_product_string">সকল পণ্য</string>
+    <string name="contact_string">যোগাযোগ</string>
+    <string name="buy_history_string">ক্রয় ইতিহাস</string>
+    <string name="sell_history_string">বিক্রি ইতিহাস</string>
+    <string name="menu_request_string">অনুরোধ</string>
+    <string name="reg_log_string">লগইন/রেজিস্টার</string>
+    <string name="logout_string">লগ আউট</string>
+    <string name="login_string">আপনার একাউন্ট এ লগইন করুন</string>
+    <string name="version_string">ভার্সন : </string>
+
+
+    <!--HOME PAGE-->
+    <string name="auction_string">মাছের নিলাম</string>
+    <string name="request_string">মাছের অনুরোধ</string>
+    <string name="search_string">মাছ খুঁজছেন?</string>
+    <string name="category_search_string">বিভাগ ঘাটুন</string>
+
+    <!--Product details page-->
+    <string name="add_product_string">পণ্য যোগ করুন</string>
+    <string name="add_cart_string">আপনার পণ্যটি যোগ করা হয়েছে</string>
+    <string name="more_product_string">আরো মাছ কিনুন . . .</string>
+
+    <!--Category List-->
+    <string name="product_filter_string">পণ্য ফিল্টার করুন</string>
+
+
+    <!--profile page-->
+    <string name="rating_string">আপনার রেটিং</string>
+    <string name="notification_string">নোটিফিকেশন</string>
+    <string name="own_product_string">বিক্রয়যোগ্য পণ্য</string>
+    <string name="wish_list_string">পছন্দের তালিকা</string>
+    <string name="pinchange_string">পিন পরিবর্তন</string>
+    <string name="referel_string">রেফারেল</string>
+    <string name="own_string">ঠিকানা</string>
+    <string name="profile_change_string">প্রোফাইল পরিবর্তন</string>
+    <string name="profile_name_change_string">প্রোফাইল নাম হালনাগাদ</string>
+    <string name="profile_email_change_string">প্রোফাইল ইমেল হালনাগাদ</string>
+    <string name="profile_update_success_string">আপনার প্রোফাইল পরিবর্তন করা হয়েছে</string>
+
+    <!--cart page-->
+    <string name="price_string">মাছের দাম : </string>
+    <string name="ice_string">বরফ পাটা</string>
+    <string name="servicecharge_string">সার্ভিস চার্জ</string>
+    <string name="delivery_string">ডেলিভারি চার্জ</string>
+    <string name="vat_string">ভ্যাট</string>
+    <string name="discount_string">ডিসকাউন্ট</string>
+    <string name="pricesum_string">সর্বমোট :</string>
+    <string name="bag_string">বাজারের ব্যাগ</string>
+    <string name="name_string">মাছের নাম : </string>
+    <string name="min_buy_string">সর্বনিম্ম ক্রয় : </string>
+    <string name="single_seller_string">বিক্রেতা : </string>
+    <string name="no_address_string">কোনো ঠিকানা পাওয়া যায় নি</string>
+    <string name="add_address_string">নতুন ঠিকানা যোগ করুন</string>
+    <string name="payment_cod_string">নগদে লেনদেন</string>
+    <string name="payment_online_string">অনলাইন পেমেন্ট</string>
+    <string name="payment_bkash_string">বিকাশ(আসন্ন)</string>
+    <string name="payment_no_pay_string">অন্য পেমেন্ট মেথড সিলেক্ট করুন</string>
+    <string name="payment_succes_string">আপনার অর্ডার সফল ভাবে সম্পন্ন হয়েছে </string>
+    <string name="order_string">আপনার বাজার নিশ্চিত করুন</string>
+    <string name="discount_title_string">ডিসকাউন্ট কোড লিখুন</string>
+    <string name="discount_invalid_string">ডিসকাউন্ট কোড সঠিক নয়</string>
+    <string name="discount_limit_string">সর্বোচ্চ বার ডিসকাউন্ট ব্যবহার হয়েছে</string>
+    <string name="discount_expired_string">ডিসকাউন্ট মেয়াদ শেষ</string>
+    <string name="discount_success_string">ডিসকাউন্ট যোগ হয়েছে</string>
+    <string name="product_outof_stock_string">পণ্যটি এই মুহূর্তে স্টকে নেই</string>
+
+    <!--request page-->
+    <string name="request_name_string">আপনার নাম</string>
+    <string name="request_email_string">আপনার ইমেইল</string>
+    <string name="request_conatct_string">আপনার মোবাইল নম্বর</string>
+    <string name="request_msg_string">আপনার বার্তা</string>
+
+
+    <!--Product Sell-->
+    <string name="sell_product">বিক্রি করুন</string>
+    <string name="sell_more_product">নতুন পণ্য বিক্রি করুন</string>
+    <string name="upload_product_name_string">পণ্য নির্বাচন করুন</string>
+    <string name="upload_avg_weight_string">পণ্যের গড় ওজন</string>
+    <string name="upload_max_unit_string">সর্বমোট পণ্যের পরিমান</string>
+    <string name="upload_category_string">পণ্যের ধরণ নির্বাচন করুন</string>
+    <string name="upload_unit_size_string">প্রতি ইউনিট পরিমান</string>
+    <string name="upload_unit_price_string">প্রতি ইউনিট পণ্যের দাম</string>
+    <string name="upload_type_string">বিক্রয় ধরন</string>
+    <string name="upload_wholesale_weight_string">পাইকারি দরে সর্বনিম্ন কত ইউনিট পণ্য বিক্রি করবেন</string>
+    <string name="upozilla_string">উপজেলা নির্বাচন করুন</string>
+    <string name="zilla_string">জেলা নির্বাচন করুন</string>
+    <string name="division_string">বিভাগ নির্বাচন করুন</string>
+    <string name="add_image_string">ছবি যোগ করুন</string>
+    <string name="add_image_delete_string">আপনি কি ছবি বাদ দিতে চান?</string>
+    <string name="add_video_string">ভিডিও যোগ করুন</string>
+    <string name="product_succes_string">আপনার পণ্যটি যোগ করা হয়েছে</string>
+
+    <!--Histrory-->
+    <string name="orderno_string">অর্ডার নং : </string>
+    <string name="history_time_string">সময়</string>
+    <string name="history_accept_string">গ্রহণ হয়েছে</string>
+    <string name="history_cancel_string">বাতিল</string>
+    <string name="history_pending_string">পেন্ডিং</string>
+    <string name="history_process_string">প্রক্রিয়াধীন</string>
+    <string name="history_onway_string">বিতরণের পথে</string>
+    <string name="history_success_string">ডেলিভারি হয়েছে</string>
+    <string name="history_description_string">পণ্যের বিবরন : </string>
+    <string name="history_address_string">ক্রেতার ঠিকানা</string>
+    <string name="history_name_string">পণ্যের নাম</string>
+    <string name="history_price_string">দাম(টাকা)</string>
+    <string name="history_sub_price_string">মোট</string>
+    <string name="history_descriptio_string">পণ্যের বিবরন : </string>
+
+    <!--Search Page-->
+    <string name="search_new_string">নতুন মাছের নাম যোগ করুন</string>
+
+    <!--Seller List-->
+    <string name="seller_name_string">বিক্রেতার নাম</string>
+    <string name="seller_nameonly_string">বিক্রেতা : </string>
+    <string name="seller_ratting_string">রেটিং : </string>
+    <string name="seller_ratting_5_string"> /৫.০০</string>
+    <string name="seller_review_name_string"> রিভিউ</string>
+    <string name="seller_mbl_string">মোবাইল : </string>
+
+    <string name="ask_ratting_string"> - পণ্য কেমন ছিল ?</string>
+
+    <!--Seller details-->
+    <string name="seller_details_string">বিক্রেতার বিবরন</string>
+    <string name="seller_details_ratting_string">রেটিং দিন</string>
+    <string name="seller_details_more_string">বিক্রেতার আরো পণ্য</string>
+    <string name="seller_follow_string">অনুসরণ করুন</string>
+    <string name="seller_unfollow_string">অনুসরণ বাতিল</string>
+    <string name="seller_follow_success_string">বিক্রেতা কে অনুসরণ করা হয়েছে</string>
+    <string name="seller_unfollow_success_string">বিক্রেতা কে অনুসরণ বাতিল করা হয়েছে</string>
+    <!--Pin change-->
+    <string name="pin_change_title_string">পিন পরিবর্তন</string>
+    <string name="pin_change_msg_string">পিন পরিবর্তন করার জন্য দয়া করে নিচে আপনার বর্তমান পিন আর নতুন পিন লিখুন</string>
+    <string name="pin_change_old_string">এখানে বর্তমান পিন লিখুন</string>
+    <string name="pin_change_new_string">এখানে নতুন পিন লিখুন</string>
+
+    <!--Ratting-->
+    <string name="ratting_title_string">রেটিং দিন</string>
+    <string name="ratting_comment_string">আপনার অভিজ্ঞতা শেয়ার করুন</string>
+
+    <!--seller Product-->
+    <string name="seller_product_active_string">প্রশাসক অনুমোদন</string>
+    <string name="seller_product_approved_string">অনুমোদিত</string>
+    <string name="seller_product_pending_string">প্রক্রিয়াধীন</string>
+    <string name="seller_product_decline_string">অনুমোদিত নয়</string>
+    <string name="seller_active_product_string">সক্রিয়</string>
+    <string name="seller_deactive_product_string">নিষ্ক্রিয়</string>
+
+    <!--contact page-->
+
+    <string name="welcome_title_string"><h2 style="color:blue">ফিশ বাংলাতে আপনাকে স্বাগতম</h2></string>
+    <string name="contact_mobile_title">০১৯১৩৩১১২২২</string>
+    <string name="contact_title_string"><h2 style="color:blue">ফিশ বাংলাতে আপনাকে স্বাগতম</h2> <h4>যোগাযোগ</h4>  <p>২৭, পশ্চিম তেজতুরি বাজার, ঢাকা, বাংলাদেশ</p></string>
+    <string name="contact_website">ফিশবাংলা ওয়েবসাইট</string>
+    <string name="contact_facebook">ফিশবাংলা ফেসবুক পেজ</string>
+    <string name="contact_website_url">http://www.fishbangla.com</string>
+    <string name="contact_facebook_url">https://www.facebook.com/FishBangla/</string>
+
+    <!--Login page-->
+    <string name="login_title_string">আপনার মোবাইল নম্বর দিন</string>
+    <string name="password_title_string">আপনি এসএমএস মাধ্যমে যে\n পিনটি পেয়েছেন দয়া করে সেটি নিচে লিখুন</string>
+
+    <!--Address String-->
+    <string name="address_home_string">বাসা নম্বর</string>
+    <string name="address_flor_string">এপার্টমেন্ট / ফ্লোর নং</string>
+    <string name="address_road_string">রাস্তা, ব্লক / সেক্টর নং</string>
+    <string name="address_area_string">এলাকা নাম</string>
+    <string name="address_submit_string">ঠিকানা নিশ্চিত করুন</string>
+    <string name="address_home1_string">বাসা</string>
+    <string name="address_address1_string">ঠিকানা ১</string>
+    <string name="address_address2_string">ঠিকানা ২</string>
+    <string name="address_new_string">নতুন ঠিকানা যোগ করুন</string>
+    <string name="address_no_string">কোনো ঠিকানা পাওয়া যায় নি</string>
+    <!--<string name="address_name_string"></string>-->
+
+
+    <!--Filter Product-->
+    <string name="filter_product_avg_string">গড় ওজন(গ্রাম)</string>
+    <string name="filter_product_price_string">দামের পরিসর</string>
+    <string name="filter_all_division_string">সকল পণ্য</string>
+    <string name="filter_all_product_string">সকল বিভাগ</string>
+
+    <!--Auction String-->
+    <string name="auction_max_price_string">বর্তমান সর্বোচ্চ দর</string>
+    <string name="auction_submit_string">আপনার দর দিন</string>
+    <string name="auction_success_string">ধন্যবাদ, আপনি সর্বোচ্চ দর দাতা হলে আপনাকে মোবাইলে  কল করা হবে.</string>
+    <string name="auction_valodation_string">আপনার দরটি বর্তমান সর্বোচ্চ দর থেকে কম হওয়া প্রযোজ্য নয়.</string>
+
+
+    <string name="title_activity_home__page">Home_Page</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--    //config-->
+    <string name="update_message">আপডেট করুন</string>
+    <string name="notnow_string">Not Now</string>
+    <string name="update_string">Update</string>
+    <string name="exitcon_string">Exit</string>
+    <string name="play_store_link">https://play.google.com/store/apps/details?id=</string>
+
+
+    <!--    login page-->
+    <string name="send_otp_string">আপনাকে পিন পাঠানো হয়েছে\nনিচে পিন কোডটি লিখুন.</string>
+    <string name="send_otp_validation_string">ফিশ বাংলাতে আপনাকে স্বাগতম।\nদয়া করে নিচে আপনার মোবাইল নম্বর লিখুন।</string>
+    <string name="login_forgot_string">পিন ভুলে গেছেন?</string>
+    <string name="login_invalid_string">ব্যবহারকারী বা পাসওয়ার্ড সঠিক নয়</string>
+    <string name="login_new_string">প্রথম ব্যবহার এর ক্ষেত্রে, এসএমএস মাধ্যমে প্রাপ্ত পিনটি দয়া করে নিচে লেখুন।</string>
+    <string name="login_old_string">পুরাতন ব্যবহার এর ক্ষেত্রে, আপনি আগের পিনটি লেখুন।</string>
+
+    <!--    profile-->
+    <string name="pin_change_success_string">আপনার পিন সফলভাবে পরিবর্তন করা হয়েছে</string>
+
+    <string name="avg_string">গড় ওজন : </string>
+
+
+    <!--Reefrence-->
+    <string name="reference_invalid_string">রেফারেল সঠিক নয়</string>
+    <string name="reference_title_string">রেফারেল নম্বর লিখুন</string>
+    <string name="reference_input_string">বিক্রি করার জন্য আপনার রেফারেল নম্বর থাকতে হবে। আপনি অন্য বিক্রেতার থেকে রেফারেল নম্বরটি সংগ্রহ করুন।</string>
+
+    <string name="change_string">আপনি কি পরিবর্তন করতে চান?</string>
+    <string name="request_success_string">আপনার অনুরোধটি সফলভাবে পাঠানো হয়েছে</string>
+    <string name="request_title_string">আবেদন এর ধরণ নির্বাচন করুন</string>
+
+    <string name="address_add_success_string">আপনার ঠিকানা যোগ করা হয়েছে</string>
+    <string name="address_delete_confirmation_string">আপনি কি ঠিকানা বাতিল করার জন্য নিশ্চিত?</string>
+    <string name="address_update_string">আপনার ঠিকানা পরিবর্তন করা হয়েছে</string>
+    <string name="address_delete_string">আপনার ঠিকানা মুছে ফেলা হয়েছে</string>
+    <string name="product_edit_title_string">আপনার পণ্য আবার পর্যালোচনা করা হবে।</string>
+
+    <string name="product_edit_string">পণ্য পরিবর্তন</string>
+
+    <string name="default_notification_channel_id">FISHBANGLA_NOTIFICATION</string>
+    <string name="no_browser_string">লিংকটি খুলার জন্য কোনো এপ্লিকেশন পাওয়া যাই নি</string>
+    <string name="feedback_succes_string">আপনার প্রতিক্রিয়ার জন্য ধন্যবাদ</string>
+
+
+    <!--fvrt strings-->
+    <string name="fvrt_add_string">প্রিয়তালিকায় যোগ করুন</string>
+    <string name="fvrt_add_success_string">প্রিয়তালিকায় যোগ করা হয়েছে</string>
+    <string name="fvrt_delete_string">প্রিয়তালিকা থেকে বাদ দিন</string>
+    <string name="fvrt_delete_success_string">প্রিয়তালিকা থেকে বাদ দেয়া হয়েছে</string>
+
+    <string name="notification_confirmation_string">আপনি কি নোটিফিকেশন বাতিল করার জন্য নিশ্চিত?</string>
+    <string name="notification_read_string">সবগুলো পঠিত হিসাবে চিহ্নিত করুন</string>
+
+
+    <string name="video_exception">No Player Found to Play This video</string>
+
+    <string name="cod_payment_tag">1</string>
+    <string name="online_payment_tag">10</string>
+    <string name="bkash_payment_tag">2</string>
+
+
+</resources>

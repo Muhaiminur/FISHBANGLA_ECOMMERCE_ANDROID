@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.gtech.fishbangla.Fragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_seller"
+        android:name="com.gtech.fishbangla.Fragment.SellerList"
+        android:label="@string/seller_string"
+        tools:layout="@layout/fragment_seller_list" />
+
+    <fragment
+        android:id="@+id/frag_product_details"
+        android:name="com.gtech.fishbangla.Fragment.ProductDetails"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_product_details" />
+
+    <fragment
+        android:id="@+id/frag_category_list"
+        android:name="com.gtech.fishbangla.Fragment.Category_List"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_category__list" />
+    <fragment
+        android:id="@+id/frag_profile"
+        android:name="com.gtech.fishbangla.Fragment.ProfilePage"
+        android:label="@string/own_string"
+        tools:layout="@layout/fragment_profile_page" />
+
+
+    <fragment
+        android:id="@+id/nav_request"
+        android:name="com.gtech.fishbangla.Fragment.FishRequest"
+        android:label="@string/request_string"
+        tools:layout="@layout/fragment_fish_request" />
+    <fragment
+        android:id="@+id/nav_buy"
+        android:name="com.gtech.fishbangla.Fragment.BuyHistory"
+        android:label="@string/buy_history_string"
+        tools:layout="@layout/fragment_buy_history" />
+
+    <fragment
+        android:id="@+id/nav_sell"
+        android:name="com.gtech.fishbangla.Fragment.SellHistory"
+        android:label="@string/sell_history_string"
+        tools:layout="@layout/fragment_sell_history" />
+
+    <fragment
+        android:id="@+id/nav_seller_details"
+        android:name="com.gtech.fishbangla.Fragment.SellerDetails"
+        android:label="@string/seller_details_string"
+        tools:layout="@layout/fragment_seller_details" />
+
+    <fragment
+        android:id="@+id/nav_Own_product"
+        android:name="com.gtech.fishbangla.Fragment.OwnProduct"
+        android:label="@string/own_product_string"
+        tools:layout="@layout/fragment_own_product" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.gtech.fishbangla.Fragment.ContactFIshbangla"
+        android:label="@string/contact_string"
+        tools:layout="@layout/fragment_contact_fishbangla" />
+    <fragment
+        android:id="@+id/nav_login_register"
+        android:name="com.gtech.fishbangla.Fragment.LoginPage"
+        android:label="@string/reg_log_string"
+        tools:layout="@layout/fragment_login_page" />
+    <fragment
+        android:id="@+id/nav_password"
+        android:name="com.gtech.fishbangla.Fragment.PasswordPage"
+        android:label="@string/reg_log_string"
+        tools:layout="@layout/fragment_password_page" />
+    <fragment
+        android:id="@+id/frag_addresslist"
+        android:name="com.gtech.fishbangla.Fragment.AddressList"
+        android:label="@string/own_string"
+        tools:layout="@layout/fragment_address_list" />
+
+    <fragment
+        android:id="@+id/frag_notification"
+        android:name="com.gtech.fishbangla.Fragment.NotificationList"
+        android:label="@string/notification_string"
+        tools:layout="@layout/fragment_notification_list" />
+    <fragment
+        android:id="@+id/frag_fvrt_list"
+        android:name="com.gtech.fishbangla.Fragment.FvrtProductList"
+        android:label="@string/wish_list_string"
+        tools:layout="@layout/fragment_fvrt_product_list" />
+
+    <fragment
+        android:id="@+id/frag_all_product"
+        android:name="com.gtech.fishbangla.Fragment.AllProduct"
+        android:label="@string/all_product_string"
+        tools:layout="@layout/fragment_all_product" />
+</navigation>
